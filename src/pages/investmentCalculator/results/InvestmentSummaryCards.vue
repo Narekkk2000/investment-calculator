@@ -83,7 +83,7 @@ const cards = computed<KpiCard[]>(() => {
       icon: '〜',
     },
     {
-      label: 'աստացի տարեկան տոկոս (APY)',
+      label: 'Փաստացի տարեկան տոկոս (APY)',
       value: formatPercent(s.effectiveRate),
       sub: 'սպասվող տարեկան տոկոսադրույք',
       color: COLORS.MUTED,
