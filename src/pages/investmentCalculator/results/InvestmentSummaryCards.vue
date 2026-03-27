@@ -98,7 +98,7 @@ const cards = computed<KpiCard[]>(() => {
 
     <!-- ── Cards grid ───────────────────────────────────────────────────────── -->
     <div
-        class="w-[550px] border border-[#E8EEF6] rounded-sm p-5 flex flex-col gap-4 transition-all duration-200"
+        class="w-full border border-[#E8EEF6] rounded-sm p-5 flex flex-col gap-4 transition-all duration-200"
         style="background: #F7F8FA;"
     >
     <div
