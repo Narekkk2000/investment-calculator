@@ -76,8 +76,8 @@ export const useInvestmentTerm = () => {
 
   const termHint = computed(() =>
     store.termUnit === 'months'
-      ? `= ${Math.round((store.totalMonths / 12) * 10) / 10} տարիներ ընդհանուր`
-      : `= ${store.totalMonths} ամիսներ ընդհանուր`,
+      ? `ընդհանուր ${Math.round((store.totalMonths / 12) * 10) / 10} տարի`
+      : `ընդհանուր ${store.totalMonths} ամիս`,
   )
 
   return {

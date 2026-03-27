@@ -44,7 +44,7 @@ const cards = computed<KpiCard[]>(() => {
   const s = store.summary
   return [
     {
-      label: 'Ընդհանուր արժեք',
+      label: 'Կուտակված գումար',
       large: true,
       value: fmt(s.totalValue),
       sub: 'Պորտֆելի կանխատեսվող արժեք',
@@ -68,7 +68,7 @@ const cards = computed<KpiCard[]>(() => {
       icon: '▲',
     },
     {
-      label: 'Եկամտաբերության բազմապատկիչ',
+      label: 'Եկամտաբերության պատիկ (ROI)',
       large: true,
       value: `${s.returnMultiple.toFixed(2)}×`,
       sub: 'ընդհանուր արժեք / ներդրված ընդհանուր արժեք',
@@ -76,14 +76,14 @@ const cards = computed<KpiCard[]>(() => {
       icon: '◌',
     },
     {
-      label: 'Տարեկան բարդ աճի տեմպ',
+      label: 'Տարեկան միջին աճ (CAGR)',
       value: formatPercent(s.annualReturn),
       sub: 'բարդ տարեկան աճի տեմպը',
       color: COLORS.SECONDARY,
       icon: '〜',
     },
     {
-      label: 'Տարեկան փաստացի տոկոսադրույք',
+      label: 'աստացի տարեկան տոկոս (APY)',
       value: formatPercent(s.effectiveRate),
       sub: 'սպասվող տարեկան տոկոսադրույք',
       color: COLORS.MUTED,
