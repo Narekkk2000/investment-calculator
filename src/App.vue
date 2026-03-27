@@ -4,7 +4,7 @@ import InvestmentCalculator from './pages/investmentCalculator/InvestmentCalcula
 
 <template>
   <div class=" min-h-screen bg-app-bg text-app-content">
-    <main class="mx-auto flex min-h-screen  max-w-5xl items-center justify-center p-4 sm:p-6">
+    <main class="mx-auto flex min-h-screen items-center justify-center sm:p-6">
       <InvestmentCalculator />
     </main>
   </div>
